@@ -15,4 +15,4 @@ jobs:
       - name: Run gitleaks
         run: |
           docker run --rm -v "$PWD:/repo" -w /repo gitleaks/gitleaks:latest \
-            detect --source . --redact --no-git
+            detect --redact --log-level=info
